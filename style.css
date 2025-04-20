@@ -1,0 +1,54 @@
+body {
+  background-color: #000;
+  color: #eee;
+  font-family: monospace;
+  padding: 2rem;
+}
+
+main {
+  max-width: 600px;
+  margin: auto;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+a {
+  margin-right: 1rem;
+  color: #b48eff; /* mor renk */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.intro {
+  margin-top: 2rem;
+}
+
+footer {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.imza {
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #aaa;
+  width: 0;
+  animation: typing 2s steps(24) forwards, blink .7s step-end infinite;
+  display: inline-block;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 24ch }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
